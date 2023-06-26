@@ -345,6 +345,25 @@ $ ldd ./target/x86_64-unknown-linux-musl/release/audit-filter
         not a dynamic executable
 ```
 
+
+#### Building from Mac OS X
+
+```console
+brew install rust
+rustup-init
+rustup target add x86_64-unknown-linux-musl
+```
+(Edit your `~/.cargo/config` to add the following)
+```toml
+[target.x86_64-unknown-linux-musl]
+linker = "x86_64-linux-musl-gcc"
+```
+```console
+brew install FiloSottile/musl-cross/musl-cross
+TARGET_CC=x86_64-linux-musl-gcc cargo build --release --target x86_64-unknown-linux-musl
+```
+
+
 ### Contributors
 
 * @agwells

@@ -111,11 +111,11 @@ module.exports.run_wasm = function(audit_str, nsp_config_str, output_json) {
     return ret;
 };
 
-module.exports.__wbg_log_c3187634e451d1f3 = function(arg0, arg1) {
+module.exports.__wbg_log_f2c1fde374901a83 = function(arg0, arg1) {
     console.log(getStringFromWasm0(arg0, arg1));
 };
 
-module.exports.__wbg_error_c8b342b6eef892d3 = function(arg0, arg1) {
+module.exports.__wbg_error_9e0c818417818035 = function(arg0, arg1) {
     console.error(getStringFromWasm0(arg0, arg1));
 };
 

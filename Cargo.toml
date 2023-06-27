@@ -1,6 +1,6 @@
 [package]
 name = "audit-exclude"
-version = "0.6.5"
+version = "0.6.6"
 authors = ["Greg Guthe <gguthe@mozilla.com>"]
 exclude = [
 	"tests/fixtures/*",
